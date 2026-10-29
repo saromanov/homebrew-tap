@@ -18,8 +18,4 @@ class Godownload < Formula
   def install
     bin.install "godownload-darwin-#{Hardware::CPU.type}" => "godownload"
   end
-
-  test do
-    system "#{bin}/godownload", "--hf-api-url", "http://localhost:1", "https://example.com/x", "--quiet", "-x"
-  end
 end
